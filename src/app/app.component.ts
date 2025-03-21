@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
-import { ArticleListComponentComponent } from './components/article-list-component/article-list-component.component';
+import { RouterOutlet } from '@angular/router';
 import { HeaderComponentComponent } from './components/header-component/header-component.component';
 
 @Component({
   selector: 'app-root',
-  imports: [HeaderComponentComponent, ArticleListComponentComponent],
+  imports: [HeaderComponentComponent, RouterOutlet],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })

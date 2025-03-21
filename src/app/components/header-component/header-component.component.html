@@ -3,20 +3,11 @@
 
   <nav>
     <ul>
-      <li><a href="">Accueil</a></li>
-      <li><a href="">Articles</a></li>
-      <li><a href=""> L'Ecole</a></li>
-      <li><a href="">Contact</a></li>
+      <li><a [routerLink]="['/']">Accueil</a></li>
+      <li><a [routerLink]="">Articles</a></li>
+      <li><a [routerLink]=""> L'Ecole</a></li>
+      <li><a [routerLink]="">Contact</a></li>
     </ul>
     <button>Me connecter</button>
   </nav>
 </header>
-
-<!-- <p>
-  <img [src]="imageSrc" [alt]="name" />
-  Hello {{ name }} !
-</p>
-
-<button (click)="sayHello()">Say Hello</button>
-
-<input type="text " [(ngModel)]="name" /> -->

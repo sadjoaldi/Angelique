@@ -12,7 +12,9 @@
           </div>
           <p>{{ article.createdAt | date : "dd/MM/yyy" }}</p>
           <p>{{ article.likeCount }}</p>
-          <h2>{{ article.title }}</h2>
+          <h2>
+            <a [routerLink]="['/article', article.id]"> {{ article.title }}</a>
+          </h2>
           <h3>{{ article.categoryName }}</h3>
           <p>{{ article.content }}</p>
         </div>

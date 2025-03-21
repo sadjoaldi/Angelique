@@ -1,10 +1,11 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { RouterLink } from '@angular/router';
 import { Article } from '../../models/article.model';
 
 @Component({
   selector: 'app-article-list-component',
-  imports: [CommonModule],
+  imports: [CommonModule, RouterLink],
   templateUrl: './article-list-component.component.html',
   styleUrl: './article-list-component.component.scss',
 })
